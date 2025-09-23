@@ -17,8 +17,8 @@
         <!-- Course Grid - Updated for better mobile layout -->
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             {#each courses as course}
-                <a href="all-courses/{course.link}" class="block group">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                <a href="all-courses/{course.link}" class="block group h-full">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
                         <div class="aspect-square overflow-hidden">
                             <!-- Replace with actual image -->
                             <img
@@ -29,7 +29,7 @@
                             />
                         </div>
                         <div class="p-2 sm:p-3 md:p-4">
-                            <h3 class="text-sm sm:text-base font-medium text-gray-800 leading-tight">{course.title}</h3>
+                            <h3 class="text-sm sm:text-base font-medium text-gray-800 leading-tight line-clamp-2 min-h-[2.5rem] sm:min-h-[3rem]">{course.title}</h3>
                         </div>
                     </div>
                 </a>

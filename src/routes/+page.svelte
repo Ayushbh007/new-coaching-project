@@ -21,7 +21,6 @@
         { name: "Test series", link: "/test-series"},
         { name: "Quizzes", link: "/quizzes"},
         { name: "Contact", link: "/contact-us" },
-        { name: "Admision", link: "/admision"},
         { name: "Admision", link: "/admision"}
     ];
 </script>
