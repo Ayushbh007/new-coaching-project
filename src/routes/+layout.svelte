@@ -22,50 +22,50 @@
   }); 
 </script>  
 
-<svelte:head>   
-  <title>AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India</title>   
-  <meta name="description" content="AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship." />      
-  
+<svelte:head>
+  <title>AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India</title>
+  <meta name="description" content="AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship." />
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/logos/alpinelogo.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/logos/alpinelogo.png" />
-  <link rel="shortcut icon" href="/logos/alpinelogo.png" type="image/png" />
-  
-  <!-- Open Graph meta tags -->   
-  <meta property="og:title" content="AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India" />   
-  <meta property="og:description" content="AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship." />   
-  <meta property="og:image" content="/logos/alpinelogo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India" />
+  <meta property="og:description" content="AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship." />
+  <meta property="og:image" content="https://alpineias.com/favicon.png" />
   <meta property="og:image:alt" content="AlpineIAS Logo - Premier UPSC Coaching Institute" />
-  <meta property="og:url" content="https://alpineias.com/" />   
-  <meta property="og:type" content="website" />   
+  <meta property="og:url" content="https://alpineias.com/" />
+  <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AlpineIAS" />
-  <meta property="og:locale" content="en_US" />      
-  
-  <!-- Twitter Card meta tags -->   
-  <meta name="twitter:card" content="summary_large_image" />   
-  <meta name="twitter:title" content="AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India" />   
-  <meta name="twitter:description" content="AlpineIAS is Dehradun's leading UPSC coaching institute with expert faculty and proven success rates." />   
-  <meta property="twitter:image" content="/logos/alpinelogo.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AlpineIAS - Premier UPSC Coaching Institute in Dehradun, India" />
+  <meta name="twitter:description" content="AlpineIAS is Dehradun's leading UPSC coaching institute with expert faculty and proven success rates." />
+  <meta property="twitter:image" content="https://alpineias.com/favicon.png" />
   <meta name="twitter:image:alt" content="AlpineIAS Logo - Premier UPSC Coaching Institute" />
   <meta name="twitter:site" content="@AlpineIAS" />
   <meta name="twitter:creator" content="@AlpineIAS" />
-  
+
   <!-- Additional meta tags for better SEO -->
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="AlpineIAS" />
   <meta name="keywords" content="UPSC coaching, IAS preparation, civil services, Dehradun, AlpineIAS, UPSC institute, IAS coaching" />
   <link rel="canonical" href="https://alpineias.com/" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AlpineIAS",
-  "url": "https://alpineias.com/",
-  "logo": "/logos/alpinelogo.png",
-  "description": "AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship."
-}
-</script>
-</svelte:head>  
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "name": "AlpineIAS",
+   "url": "https://alpineias.com/",
+   "logo": "https://alpineias.com/favicon.png",
+   "description": "AlpineIAS is Dehradun's leading UPSC coaching institute, providing comprehensive IAS preparation with expert faculty, proven strategies, and personalized mentorship."
+ }
+ </script>
+</svelte:head>
 
 <!-- ✅ MAIN PAGE LAYOUT --> 
 <div class="min-h-screen flex flex-col overflow-x-hidden">   

@@ -2,6 +2,7 @@
 <!-- (The one that contains Marquee, GalleryView, CourseBlocks, TeacherCard, Faqweb, Popup) -->
 
 <script>
+    import { onMount } from "svelte";
     import courses from "./courses.json";
     import CourseBlocks from "../components/CourseBlocks.svelte";
     import GalleryView from "../components/GalleryView.svelte";
@@ -13,6 +14,17 @@
     import TeacherCard from "../components/TeacherCard.svelte";
     import Faqweb from "../components/Faqweb.svelte";
 
+    let isMobile = $state(false);
+
+    onMount(() => {
+        const checkMobile = () => {
+            isMobile = window.innerWidth < 768;
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    });
+
     const links = [
         { name: "Home", link: "/" },
         { name: "All Courses", link: "/all-courses" },
@@ -23,6 +35,10 @@
         { name: "Contact", link: "/contact-us" },
         { name: "Admision", link: "/admision"}
     ];
+
+    let galleryImages = $derived(isMobile
+        ? [["/logos/mobilepopup2.png", "Mobile Banner"]]
+        : [["/logos/popup1.jpg", "Local Banner"], ["/logos/popup2.png", "Local Banner"]]);
 </script>
 
 <Marquee>
@@ -40,10 +56,7 @@
     {/each}
 </Marquee>
 
-<GalleryView images={[
-    ["/logos/popup1.jpg", "Local Banner"], // ✅ Local image from /static/logos
-    // ✅ External image
-]} delay={3000} />
+<GalleryView images={galleryImages} delay={3000} />
 
 <!-- NEW HEADING SECTION -->
 <div class="courses-heading-container">
